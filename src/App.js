@@ -3,10 +3,8 @@ import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
-import { useParams, useHistory } from 'react-router-dom';
 import {accessToken, accessChords} from "./Access.js";
 import axios from "axios";
-import { useNavigate } from 'react-router-dom';
 
 import "./App.css";
 
