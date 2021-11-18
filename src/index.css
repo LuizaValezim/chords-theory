@@ -1,0 +1,111 @@
+.main {
+  margin: 0rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  min-height: 44.1rem;
+  padding: 0.1rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1rem 10rem rgb(242 65 80 / 20%), 0rem 1rem 3rem rgb(242 65 80 / 70%);
+  border-radius: 5px;
+  background-color: #F24150;
+  font-family: 'Work Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-size: 3.5rem;
+  margin: 0rem;
+}
+
+.content{
+  width: 65%;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.chordsButton1, .chordsButton2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chordsButton3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  margin: 0.02rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  color: #F24150;
+  margin: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 0.6rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  background-color: rgb(255, 208, 212);
+  align-items: center;
+  margin-top: 2.5rem;
+  color: rgb(235, 57, 72);
+  padding: 0.4rem 1.5rem;;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  width: 40rem;
+  font-weight: 300;
+  margin: 0.2rem;
+  margin-left: 1.5rem;
+}
+
+.groupByProbability{
+  display: flex;
+  flex-direction: row;
+  font-weight: 300
+}
+
+.textWithChord{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
