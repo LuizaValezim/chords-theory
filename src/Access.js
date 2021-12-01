@@ -1,22 +1,23 @@
 import axios from "axios";
 
-async function accessToken(){
-    return await axios
-    .post("https://api.hooktheory.com/v1/users/auth", {username: "luizavalezim", password:"luizavalezim123"}, {headers: {'Content-Type': 'application/json', 'Accept':'application/json'}})
+async function accessTokenSim(){
+  return await axios
+  .get("https://enigmatic-bayou-56424.herokuapp.com/luizavap/token")
+  .then((response) => {
+    var token = response.data.token;
+    console.log(token);
+    return token;
+  });
+}
+
+async function accessSim(token){
+  return await axios
+    .post("https://enigmatic-bayou-56424.herokuapp.com/luizavap/message", {"token": `${token}`})
     .then((response) => {
-      var token = response.data.activkey;
-      return token;
-    });
+      var sim = response.data.mensagem;
+      console.log(sim);
+      return sim;
+    })
 }
 
-async function accessChords(activkey, sufix){
-    return await axios
-      .get("https://api.hooktheory.com/v1/trends/" + sufix,
-          {headers: {"Authorization": `Bearer ${activkey}`}})
-      .then((response) => {
-        var chords = response.data;
-        return chords;
-      })
-}
-
-export {accessToken, accessChords};
+export {accessTokenSim, accessSim};
